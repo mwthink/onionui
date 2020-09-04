@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { ParsedOnion } from './types';
-import OnionInput from './OnionInput';
+import { OnionInput, OnionTable } from './ui';
 
 export interface AppProps {}
 
@@ -28,6 +28,11 @@ export class App extends React.Component <AppProps, AppState> {
             <OnionInput key={Object.keys(this.state.onions).length} onImport={onions => this.addOnions(onions)}/>
             <hr/>
             Onions stored: {Object.keys(this.state.onions).length}
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <OnionTable onions={this.state.onions}/>
           </Col>
         </Row>
       </Container>

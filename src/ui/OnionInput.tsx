@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, Input } from 'reactstrap';
-import { readOnionYaml } from './utils';
-import { ParsedOnion } from './types';
+import { readOnionYaml } from '../utils';
+import { ParsedOnion } from '../types';
 
 export interface OnionInputProps {
   onImport: (onions:ParsedOnion[]) => any

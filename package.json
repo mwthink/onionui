@@ -5,7 +5,9 @@
   "repository": "git@github.com:mwthink/onionui.git",
   "author": "Marshall Williams <marshall@mwthink.net>",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "npx webpack"
+  },
   "dependencies": {
     "js-yaml": "^3.14.0",
     "react": "^16.13.1",

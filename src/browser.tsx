@@ -5,7 +5,16 @@ import App from './App';
 const appTarget = document.createElement('div');
 document.body.appendChild(appTarget);
 
+const storageProvider = {
+  save: async (key:string, value:string) => {
+    localStorage.setItem(key, value);
+  },
+  get: async (key:string) => {
+    return localStorage.getItem(key);
+  },
+}
+
 render(
-  <App/>
+  <App storage={storageProvider}/>
   ,appTarget
 )

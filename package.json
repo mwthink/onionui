@@ -12,7 +12,8 @@
     "js-yaml": "^3.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "reactstrap": "^8.5.1"
+    "reactstrap": "^8.5.1",
+    "sjcl": "^1.0.8"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "^3.2.3",
@@ -21,6 +22,7 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/reactstrap": "^8.5.1",
+    "@types/sjcl": "^1.0.29",
     "@types/webpack": "^4.41.22",
     "@types/webpack-dev-server": "^3.11.0",
     "html-webpack-plugin": "^4.4.1",
